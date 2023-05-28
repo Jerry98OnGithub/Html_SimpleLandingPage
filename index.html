@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--I am working for this link >> https://survey-form.freecodecamp.rocks/ -->
+
+<html>
+
+<head>
+  <title>freeCodeCamp Survey Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <style>
+    body {
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </div>
+  <div class="container">
+    <form>
+      <label for="name">Name</label><input type="text" id="name" name="name" placeholder="Enter your name" />
+      <label for="email">Email</label><input type="email" id="email" name="email" placeholder="Enter your Email" />
+      <label for="age">Age</label><input type="number" id="age" name="age" placeholder="Age" />
+
+
+      <p>What is your gender?</p>
+      <label for="male"><input type="radio" id="male" name="gender" value="male" />Male</label>
+      <label for="female"> <input type="radio" id="female" name="gender" value="female" />Female</label>
+      <label for="other"><input type="radio" id="other" name="gender" value="other" />Other</label>
+      <br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option disabled selected value>Select</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+      <br />
+
+      <p>Select your interests:</p>
+      <label for="coding"><input type="checkbox" id="coding" name="interests[]" value="coding" />Coding</label>
+      <label for="reading"><input type="checkbox" id="reading" name="interests[]" value="reading" />Reading</label>
+      <label for="sports"><input type="checkbox" id="sports" name="interests[]" value="sports" />Sports</label>
+      <label for="music"><input type="checkbox" id="music" name="interests[]" value="music" />Music</label>
+      <label for="frontEnd"><input type="checkbox" id="frontEnd" name="interests[]" value="frontEnd" />Front-End
+        Development</label>
+      <label for="backend"><input type="checkbox" id="backend" name="interests[]" value="backend" />Back-End
+        Development</label>
+      <label for="webdev"><input type="checkbox" id="webdev" name="interests[]" value="webdev" />Web Development</label>
+      <label for="wikipedia"><input type="checkbox" id="wikipedia" name="interests[]" value="wikipedia" />Wikipedia
+        Editing</label>
+      <label for="devops"><input type="checkbox" id="devops" name="interests[]" value="devops" />DevOps</label>
+      <label for="cloud"><input type="checkbox" id="cloud" name="interests[]" value="cloud" />Cloud Computing</label>
+      <br />
+
+      <label for="message">Any comments or suggestions?</label>
+      <textarea id="message" name="message" placeholder="Enter your comment here..."></textarea>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
